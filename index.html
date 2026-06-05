@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Lowhan - Desenvolvedor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>-->
     <link rel="icon" type="image/x-icon" href="/assets/Design_sem_nome-removebg-preview.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -21,13 +21,12 @@
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#resume">Resumo</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
             <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
-    <section aria-label="seção curriculo download Lucas" class="section-div">
+    <section id="home" aria-label="seção curriculo download Lucas" class="section-div">
         <div>
             <h2>Hi There! I'm</h2>
             <h2 class="digitando">Back-end Java Developer</h2>
@@ -38,7 +37,7 @@
         <img src="/assets/ChatGPT Image 20 de mai. de 2026, 11_00_18.png" alt="ilustrativa imagem">
     </section>
     <main>
-        <article aria-label="seção sobre mim" class="sobre">
+        <article id="about" aria-label="seção sobre mim" class="sobre">
             <div class="sobre_titulo">
                 <h1>Sobre mim</h1>
                 <p>Perfil profissional - Tudo sobre mim</p>
@@ -72,7 +71,7 @@
     <section class="services">
         <div class="sobre_titulo">
                 <h1>Serviços</h1>
-                <p>/</p>
+                <p>Os serviços que ofereço como desenvolvedor.</p>
                 <div aria-label="Seção apenas de ilustrações de botões.">
                     <span></span>
                     <span></span>
@@ -126,7 +125,7 @@
                 </ul>
             </div>
     </section>
-    <div class="my_resume">
+    <div id="resume" class="my_resume">
         <div class="sobre_titulo">
                       <h1>Meu Resumo</h1>
                 <p>Desenvolvedor de software com foco em back-end Java, dedicado à criação de soluções eficientes e escaláveis.</p>
@@ -309,7 +308,7 @@
             </div>
         </div>
     </div>
-    <section class="projects">
+    <section id="portfolio" class="projects">
         <div class="sobre_titulo">
             <h1>Meus Projetos</h1>
             <p>Projetos práticos que demonstram minhas habilidades e experiência como desenvolvedor de software.</p>
@@ -319,7 +318,38 @@
                 <span></span>
             </div>
         </div>
+        <div class="projects_models">
+            <ul class="project_navegacao" aria-label="Navegação sobre modelos especificos de projetos">
+                <li data-categoria ="all" class="ativo">Todos</li>
+                <li data-categoria="websites">Websites</li>
+                <li data-categoria="aplicativos">Aplicativos</li>
+                <li data-categoria="apis">Api's</li>
+            </ul>
+        </div>
+        <!-- AQUI VAI FICAR OS PROJETOS, VOU COLOCAR IMAGENS DE PROJETOS QUE EU FIZ PRA MOSTRAR PRA GALERA -->
+        <div class="projects_armazenamento">
+            <ul aria-label="Navegação de projetos">
+                <li data-tipo="aplicativos"><img src="/assets/linkio.png" alt="Aplicação criada para encurtar URLs"></li>
+            </ul>
+        </div>
+        <a class="brn" href="https://github.com/lucaslowhan">Veja mais projetos</a>
     </section>
+    <footer id="contact">
+        <div class="sobre_titulo">
+            <h1>Lucas Lowhan</h1>
+            <p>Desenvolvedor de software focado em back-end Java, dedicado à construção de soluções eficientes, organizadas e escaláveis.</p>
+        </div>
+        <nav aria-label="navegação de links sociais">
+    <ul class="footer_sociais">
+        <li><a href="https://github.com/lucaslowhan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/lucaslowhan/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/lucaslowhan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+</nav>
+    </nav>
+    <p class="copyright">Copyright &copy; 2026 Lucas Lowhan. Todos os direitos reservados.</p>
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
