@@ -83,3 +83,28 @@ function sobreMim(){
 }
 sobreMim();
 
+const listaALL = document.querySelectorAll('.projects_armazenamento ul li');
+const buttonGeral = document.querySelectorAll('.project_navegacao li');
+
+buttonGeral.forEach((botao) => {
+    botao.addEventListener('click', (e) => {
+        // Remove ativo de todos e adiciona no clicado
+        buttonGeral.forEach(b => b.classList.remove('ativo'));
+        e.currentTarget.classList.add('ativo');
+
+        // Pega a categoria do botão clicado (all, design, graphic...)
+        const categoriaFiltro = e.currentTarget.getAttribute('data-categoria');
+
+        // Filtra a lista dinamicamente sem usar índices!
+        listaALL.forEach((projeto) => {
+            const tipoProjeto = projeto.getAttribute('data-tipo');
+
+            if (categoriaFiltro === 'all' || categoriaFiltro === tipoProjeto) {
+                projeto.classList.add('ativo');
+            } else {
+                projeto.classList.remove('ativo');
+            }
+        });
+    });
+});
+listaALL.forEach(projeto => projeto.classList.add('ativo'));
